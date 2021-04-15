@@ -14,10 +14,10 @@
 
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8          |  9   |   0   |   ~   |
-// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I          |  O   |   P   |   -   |
-// | SHIFT |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K          |  L   |   ;   |   \   |
-// |  CTRL |  Z  |  X  |  C   |  V   |  B   | MUTE  |   |       |  N   |  M    |  ,          |  .   |   /   | EQUAL |
+// |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8          |  9   |   0   | ~ |
+// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I          |  O   |   P   | - |
+// | SHIFT |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K          |  L   |   ;   | \ |
+// |  CTRL |  Z  |  X  |  C   |  V   |  B   | MUTE  |   |       |  N   |  M    |  ,          |  .   |   /   | = |
 //               | ALT | GUI  | CTRL | LOWER| ENTER |   | UP LVL| ENTER|  '    | BACKSPACE   | DEL  |
             bindings = <
 &kp ESC     &kp N1 &kp N2  &kp N3   &kp N4    &kp N5                          &kp N6     &kp N7   &kp N8    &kp N9   &kp N0   &kp GRAVE
@@ -27,7 +27,7 @@
                  &kp LALT  &kp LGUI &kp LBKT  &kp SPACE  &mo 1        &mo 2   &kp ENTER  &kp SQT  &kp BSPC  &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp UP DOWM &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&inc_dec_kp UP DOWM &inc_dec_kp RIGHT LEFT>;
         };
 
         lower_layer {
