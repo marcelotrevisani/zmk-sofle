@@ -20,14 +20,14 @@
 // |  CTRL |  Z  |  X  |  C   |  V   |  B   | MUTE  |   |       |  N   |  M    |  ,          |  .   |   /   | = |
 //               | ALT | GUI  | CTRL | LOWER| ENTER |   | UP LVL| ENTER|  '    | BACKSPACE   | DEL  |
             bindings = <
-&kp ESC     &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                      &kp N6     &kp N7   &kp N8    &kp N9   &kp N0   &kp GRAVE
-&kp TAB     &kp Q  &kp W    &kp E    &kp R     &kp T                       &kp Y      &kp U    &kp I     &kp O    &kp P    &kp MINUS
-&kp LSHIFT  &kp A  &kp S    &kp D    &kp F     &kp G                       &kp H      &kp J    &kp K     &kp L    &kp SEMI &kp BSLH
-&kp LCTRL   &kp Z  &kp X    &kp C    &kp V     &kp B      &kp HOME  &END   &kp N      &kp M    &kp COMMA &kp DOT  &kp FSLH &kp EQUAL
-                   &kp LALT &kp LGUI &kp LBKT  &kp SPACE  &mo 1     &mo 2  &kp RET    &kp SQT  &kp BSPC  &kp DEL
+&kp ESC     &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                       &kp N6     &kp N7   &kp N8    &kp N9   &kp N0   &kp GRAVE
+&kp TAB     &kp Q  &kp W    &kp E    &kp R     &kp T                        &kp Y      &kp U    &kp I     &kp O    &kp P    &kp MINUS
+&kp LSHIFT  &kp A  &kp S    &kp D    &kp F     &kp G                        &kp H      &kp J    &kp K     &kp L    &kp SEMI &kp BSLH
+&kp LCTRL   &kp Z  &kp X    &kp C    &kp V     &kp B      &kp HOME  &kp END &kp N      &kp M    &kp COMMA &kp DOT  &kp FSLH &kp EQUAL
+                   &kp LALT &kp LGUI &kp LBKT  &kp SPACE  &mo 1     &mo 2   &kp RET    &kp SQT  &kp BSPC  &kp DEL
             >;
 
-            sensor-bindings = <&kp UP DOWN &kp RIGHT LEFT>;
+            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp RIGHT LEFT>;
         };
 
         lower_layer {
